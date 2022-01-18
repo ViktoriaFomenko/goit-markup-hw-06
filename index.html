@@ -385,23 +385,30 @@
     <div class="modal">
         <form class="order-form">
             <p class="order-form-title">Оставьте свои данные, мы вам перезвоним</p>
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name"/>
-
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel"/>
-
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail"/>
-
-        <label for="comment">Комментарий</label>
-        <textarea name="comment" id="comment"  placeholder="Введите текст">
-
+            <div class="order-form-field">
+        <label for="name" class="order-form-label">Имя</label>
+        <input  class="order-form-input" type="text" name="name" id="name"/>
+            </div>
+            <div class="order-form-field">
+        <label for="tel" class="order-form-label">Телефон</label>
+        <input class="order-form-input" type="tel" name="tel" id="tel"/>
+            </div>
+            <div class="order-form-field">
+        <label for="mail" class="order-form-label">Почта</label>
+        <input class="order-form-input" type="email" name="mail" id="mail"/>
+            </div> 
+             
+            <div class="order-form-field">
+        <label for="comment" class="order-form-label">Комментарий</label>
+        <textarea class="order-form-textarea" name="comment" id="comment" placeholder="Введите текст">
+          
         </textarea>
-
-        <label for="contract conditions">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-        <input type="checkbox" name="contract conditions" id="contract conditions"/>
-
+            </div>
+            
+            <div class="order-form-field">
+        <label class="order-form-label" for="contract conditions">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        <input class="order-form-checkbox" type="checkbox" name="contract conditions" id="contract conditions"/>
+            </div>
         <button type="submit" class="submit-button">Отправить</button>
 
         
