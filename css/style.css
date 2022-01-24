@@ -629,10 +629,7 @@ textarea {
 /* Order form */
 
 .order-form {
-  width: 448px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
+  padding: 40px;
 }
 
 .order-form-title {
@@ -691,6 +688,13 @@ textarea {
   border-color: var(--accent-color);
 }
 
+.order-form-field-textarea {
+  position: relative;
+  display: flex;
+  outline: none;
+  flex-direction: column;
+}
+
 .order-form-textarea {
   padding: 12px 16px;
   width: 100%;
@@ -703,7 +707,7 @@ textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-form-field .order-form-textarea::placeholder {
+.order-form-field-textarea .order-form-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -780,7 +784,7 @@ textarea {
   align-items: baseline;
 }
 .left-part-footer {
-  min-width: 231px;
+  flex-grow: 1;
 }
 .centre-part-footer {
   margin-left: 70px;
