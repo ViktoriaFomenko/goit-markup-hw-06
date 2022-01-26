@@ -648,11 +648,13 @@ textarea {
   display: flex;
   outline: none;
   flex-direction: column;
-}
-
-.order-form-field:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.field-textarea {
+  margin-bottom: 0;
+}
+
 .order-form-label {
   margin-bottom: 4px;
   font-weight: 400;
@@ -705,8 +707,8 @@ textarea {
 
 .order-form-field .order-form-textarea::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
